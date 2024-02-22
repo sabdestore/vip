@@ -6,7 +6,7 @@ DOMAIN=sabdestorevpn.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.sabdestorevpn.me
 CF_ID=sabdestore@gmail.com
-CF_KEY=hughalQb9n8cxWL0cn76m9Bh2JxfizkI6TuigqMF
+CF_KEY=PeWezk3g-9z5CSJTDQeaEIJ03A7DYA7w6-SNQIF5
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
