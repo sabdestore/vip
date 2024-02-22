@@ -5,7 +5,7 @@ apt install jq curl -y
 DOMAIN=sabdestorevpn.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.sabdestorevpn.me
-CF_ID=sabdestore@gmail.com
+CF_ID=Sabdestore@gmail.com
 CF_KEY=ab87a9345d29e5fb48d447e422377ebf3d1fd
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
