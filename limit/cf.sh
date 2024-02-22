@@ -2,11 +2,11 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 #read -p "Masukan Domain (contoh : Bogel)" domen
-DOMAIN=vpnprem.cloud
+DOMAIN=sabdestorevpn.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.vpnprem.cloud
-CF_ID=bogelstore30@gmail.com
-CF_KEY=ec02d1d1dd91d32ed73b640c9c10acbab4f5c
+dns=${sub}.sabdestorevpn.me
+CF_ID=sabdestore@gmail.com
+CF_KEY=hughalQb9n8cxWL0cn76m9Bh2JxfizkI6TuigqMF
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
