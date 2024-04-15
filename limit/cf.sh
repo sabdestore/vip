@@ -1,12 +1,22 @@
 #!/bin/bash
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
-#read -p "Masukan Domain (contoh : Bogel)" domen
+clear
+echo -e ""
+echo -e "\033[96;1m============================\033[0m"
+echo -e "\033[93;1m      INPUT SUBDOMAIN"
+echo -e "\033[96;1m============================\033[0m"
+echo -e "\033[91;1m Note. contoh Subdomain :\033[0m \033[93mbodoh22 \033[0m"
+echo -e " "
+read -p "SUBDOMAIN :  " domen
+echo -e ""
 DOMAIN=mypremi.my.id
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
+sub=${domen}
 dns=${sub}.mypremi.my.id
-CF_ID=sabdestore@gmail.com
+#(</dev/urandom tr -dc a-z0-9 | head -c5)
+dns=${sub}.mypremi.my.id
 CF_KEY=ab87a9345d29e5fb48d447e422377ebf3d1fd
+CF_ID=sabdestore@gmail.com
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
